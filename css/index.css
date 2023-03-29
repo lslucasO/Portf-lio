@@ -1,17 +1,68 @@
 @charset "UTF-8";
 
+/* Index ira armazenar styles basicos*/
+
 
 @font-face {
-    font-family: roboto;
-    src: url();
+    font-family: 'roboto';
+    src: url('font/Roboto-Regular.ttf') format('TrueType');
 }
-
 
 :root{
     --bg_color: black;
-    --font_padrao: 
+    --font_padrao: 'roboto';
+    --font_color: white;
+    --name_color: rgb(0, 157, 255);
+    --border_color: rgba(104, 33, 255, 0.477);
 }
 
 body{
     background-color: var(--bg_color);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    color: var(--name_color);
+    text-align: center;
+    font-size: 2em;
+}
+
+h2{
+    margin-left: 20px;
+    padding: 5px;
+    color: var(--name_color);
+}
+
+p{
+    font-weight: bolder;
+    color: white;
+    text-align: center;
+}
+
+
+ul{
+    margin: auto;
+    font-size: 1.3em;
+    color: white;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    list-style-type: none;
+    padding: 25px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav{
+    background-color: var(--bg_color);
+}
+
+img{
+    width: 100%;
+    margin: auto;
 }
